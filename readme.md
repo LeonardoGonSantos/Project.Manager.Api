@@ -21,6 +21,10 @@
 5. **Segurança**:
     - Revisar e melhorar a segurança da aplicação, incluindo a validação de entradas e proteção contra ataques comuns como SQL Injection e XSS.
 
+6. **Dívida Técnica**:
+    - Separar a camada de aplicação da camada de repositório quando o projeto crescer.
+    - Utilizar Dapper para acesso ao banco de dados caso o projeto seja muito requisitado.
+
 ## Implementação de Padrões
 
 - **Factory Pattern**: Para a criação de objetos complexos.
