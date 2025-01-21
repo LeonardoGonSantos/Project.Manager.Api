@@ -810,3 +810,12 @@ coverage/
 .vscode/extensions/
 
 # Ignore Visual Studio Code workspace recommendations directory
+Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.AssemblyInfo.cs
+Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.AssemblyInfoInputs.cache
+Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.sourcelink.json
+Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.AssemblyInfo.cs
+Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.AssemblyInfoInputs.cache
+Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.sourcelink.json
+Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.AssemblyInfo.cs
+Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.AssemblyInfoInputs.cache
+Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.sourcelink.json
