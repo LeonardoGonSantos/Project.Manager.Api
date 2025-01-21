@@ -1,25 +1,25 @@
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using Project.Manager.Application.Models;
+using Project.Manager.Api.Models;
 
 namespace Project.Manager.Application.Handlers.Command
 {
-    public class ProjectCommand
+    public class ProjectCommand : IProjectCommand
     {
-        private readonly DbContext _context;
+        private readonly DataDbContext _context;
 
-        public ProjectCommand(DbContext context)
+        public ProjectCommand(DataDbContext context)
         {
             _context = context;
         }
 
-        public void AddProject(Project project)
+        public void AddProject(Api.Models.Project project)
         {
             _context.Projects.Add(project);
             _context.SaveChanges();
         }
 
-        private Project GetProjectById(int projectId)
+        public Api.Models.Project GetProjectById(int projectId)
         {
             return _context.Projects.Include(p => p.Tasks).FirstOrDefault(p => p.Id == projectId);
         }

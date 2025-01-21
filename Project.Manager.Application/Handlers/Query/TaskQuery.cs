@@ -1,19 +1,20 @@
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
-using Project.Manager.Application.Models;
+using Project.Manager.Api.Models;
+using Project.Manager.Application.Handlers.Command;
+using Project.Manager.Domain.Models;
 
 namespace Project.Manager.Application.Handlers.Query
 {
-    public class TaskQuery
+    public class TaskQuery : ITaskQuery
     {
-        private readonly DbContext _dbContext;
+        private readonly DataDbContext _dbContext;
 
-        public TaskQuery(DbContext dbContext)
+        public TaskQuery(DataDbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
-        public Project GetTasksByProject(int id)
+        public Api.Models.Project GetTasksByProject(int id)
         {
             return _dbContext.Projects.Include(p => p.Tasks).FirstOrDefault(p => p.Id == id);
         }

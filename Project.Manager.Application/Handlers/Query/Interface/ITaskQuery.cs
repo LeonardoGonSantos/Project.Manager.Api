@@ -1,7 +1,7 @@
 namespace Project.Manager.Application.Handlers.Command
 {
-    public interface ITaskCommandService
+    public interface ITaskQuery
     {
-Project GetTasksByProject(int id);
+Api.Models.Project GetTasksByProject(int id);
     }
 }

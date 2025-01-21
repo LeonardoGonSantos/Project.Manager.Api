@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Project.Manager.Api.Models;
 using Project.Manager.Api.Services;
+using Project.Manager.Application.Handlers.Command;
 
 namespace Project.Manager.Api.Controllers
 {
@@ -32,7 +33,7 @@ namespace Project.Manager.Api.Controllers
         }
 
         [HttpPost("projects")]
-        public IActionResult CreateProject([FromBody] Project project)
+        public IActionResult CreateProject([FromBody] Models.Project project)
         {
             _projectCommand.AddProject(project);
             return CreatedAtAction(nameof(GetProjectById), new { id = project.Id }, project);

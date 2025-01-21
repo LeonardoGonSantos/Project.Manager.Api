@@ -1,3 +1,5 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace Project.Manager.Api.Models
 {
     [ExcludeFromCodeCoverage]
