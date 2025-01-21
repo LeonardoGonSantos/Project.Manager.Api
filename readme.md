@@ -1,3 +1,35 @@
+# Como Rodar
+
+## Executando com Docker Compose
+
+Para rodar a aplicação utilizando Docker Compose, siga os passos abaixo:
+
+1. Certifique-se de ter o Docker e o Docker Compose instalados na sua máquina.
+2. Navegue até o diretório onde o arquivo `docker-compose.yml` está localizado.
+3. Execute o comando abaixo para iniciar os serviços definidos no `docker-compose.yml`:
+
+```sh
+docker-compose up
+```
+
+4. Para rodar os serviços em segundo plano (modo detached), utilize o comando:
+
+```sh
+docker-compose up -d
+```
+
+5. Para parar os serviços, utilize o comando:
+
+```sh
+docker-compose down
+```
+
+Esses comandos irão facilitar a execução e gerenciamento dos serviços da aplicação em contêineres Docker.
+
+## Testando a API com Swagger
+
+Após iniciar os serviços com Docker Compose, abra o navegador e acesse a página [http://localhost:5741](http://localhost:5741). A documentação do Swagger será exibida, permitindo que você teste os endpoints da API de forma interativa.
+
 # Melhorias no Projeto
 
 ## Pontos de Melhoria
@@ -85,3 +117,4 @@ jobs:
 ```
 
 Essas melhorias ajudarão a tornar o projeto mais robusto, escalável e fácil de manter.
+
