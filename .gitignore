@@ -1,0 +1,821 @@
+Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.AssemblyInfo.cs
+Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.AssemblyInfoInputs.cache
+Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.sourcelink.json
+Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.AssemblyInfo.cs
+Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.AssemblyInfoInputs.cache
+Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.sourcelink.json
+Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.AssemblyInfo.cs
+Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.AssemblyInfoInputs.cache
+Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.csproj.CoreCompileInputs.cache
+Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.sourcelink.json
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+
+# Ignore Visual Studio Code workspace settings
+.vscode/
+
+# Ignore Rider project files
+.idea/
+
+# Ignore JetBrains Rider settings directory
+.idea/
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore logs
+*.log
+
+# Ignore publish output
+publish/
+
+# Ignore .NET Core global tools
+.dotnet_tool/
+
+# Ignore coverage files
+coverage/
+*.coverage
+*.coveragexml
+*.coveragejson
+*.opencover
+*.cobertura.xml
+*.lcov
+
+# Ignore database files
+*.mdf
+*.ldf
+
+# Ignore dump files
+*.dmp
+
+# Ignore Visual Studio Code workspace settings file
+.vscode/settings.json
+
+# Ignore Visual Studio Code workspace configuration file
+.vscode/tasks.json
+
+# Ignore Visual Studio Code workspace launch configuration file
+.vscode/launch.json
+
+# Ignore Visual Studio Code workspace extensions file
+.vscode/extensions.json
+
+# Ignore Visual Studio Code workspace recommendations file
+.vscode/recommendations.json
+
+# Ignore Visual Studio Code workspace snippets file
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug configuration file
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+.vscode/recommendations/
+
+# Ignore Visual Studio Code workspace snippets directory
+.vscode/snippets/
+
+# Ignore Visual Studio Code workspace debug directory
+.vscode/debug/
+
+# Ignore Visual Studio Code workspace settings directory
+.vscode/settings/
+
+# Ignore Visual Studio Code workspace tasks directory
+.vscode/tasks/
+
+# Ignore Visual Studio Code workspace launch directory
+.vscode/launch/
+
+# Ignore Visual Studio Code workspace extensions directory
+.vscode/extensions/
+
+# Ignore Visual Studio Code workspace recommendations directory
+Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.AssemblyInfo.cs
+Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.AssemblyInfoInputs.cache
+Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.sourcelink.json
+Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.AssemblyInfo.cs
+Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.AssemblyInfoInputs.cache
+Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.sourcelink.json
+Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.AssemblyInfo.cs
+Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.AssemblyInfoInputs.cache
+Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.sourcelink.json
