@@ -1,5 +1,6 @@
 namespace Project.Manager.Api.Models
 {
+    [ExcludeFromCodeCoverage]
     public class TaskHistory
     {
         public int Id { get; set; }

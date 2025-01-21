@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Project.Manager.Api.Models
 {
+    [ExcludeFromCodeCoverage]
     public class DbContext : DbContext
     {
         public DbContext(DbContextOptions<DbContext> options) : base(options) { }

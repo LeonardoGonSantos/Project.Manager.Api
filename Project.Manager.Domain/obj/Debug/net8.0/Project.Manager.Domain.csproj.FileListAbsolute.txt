@@ -1,0 +1,12 @@
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Domain/bin/Debug/net8.0/Project.Manager.Domain.deps.json
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Domain/bin/Debug/net8.0/Project.Manager.Domain.dll
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Domain/bin/Debug/net8.0/Project.Manager.Domain.pdb
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.AssemblyInfoInputs.cache
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.AssemblyInfo.cs
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.csproj.CoreCompileInputs.cache
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.sourcelink.json
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.dll
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Domain/obj/Debug/net8.0/refint/Project.Manager.Domain.dll
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Domain/obj/Debug/net8.0/Project.Manager.Domain.pdb
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Domain/obj/Debug/net8.0/ref/Project.Manager.Domain.dll

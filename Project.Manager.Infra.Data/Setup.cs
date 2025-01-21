@@ -4,6 +4,7 @@ using Project.Manager.Infra.Data;
 
 public static class Setup
 {
+    [ExcludeFromCodeCoverage]
     public static IServiceCollection SetupData(this IServiceCollection services, string connectionString)
     {
         services.AddDbContext<DbContext>(options =>

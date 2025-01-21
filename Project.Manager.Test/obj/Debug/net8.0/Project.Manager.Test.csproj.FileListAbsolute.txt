@@ -1,0 +1,6 @@
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.csproj.AssemblyReference.cache
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.AssemblyInfoInputs.cache
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.AssemblyInfo.cs
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.csproj.CoreCompileInputs.cache
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Test/obj/Debug/net8.0/Project.Manager.Test.sourcelink.json

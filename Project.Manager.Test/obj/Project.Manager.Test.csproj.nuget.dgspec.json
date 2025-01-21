@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Test/Project.Manager.Test.csproj": {}
+  },
+  "projects": {
+    "/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Test/Project.Manager.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Test/Project.Manager.Test.csproj",
+        "projectName": "Project.Manager.Test",
+        "projectPath": "/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Test/Project.Manager.Test.csproj",
+        "packagesPath": "/Users/leonardogoncalves/.nuget/packages/",
+        "outputPath": "/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Test/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/leonardogoncalves/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.0.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

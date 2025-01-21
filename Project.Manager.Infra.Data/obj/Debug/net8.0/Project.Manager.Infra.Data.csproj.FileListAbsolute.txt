@@ -1,0 +1,5 @@
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.AssemblyInfoInputs.cache
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.AssemblyInfo.cs
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.csproj.CoreCompileInputs.cache
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.sourcelink.json
