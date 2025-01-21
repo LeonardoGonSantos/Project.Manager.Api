@@ -1,18 +1,18 @@
 using Project.Manager.Api.Models;
-using Microsoft.EntityFrameworkCore;
+using Project.Manager.Application.Handlers.Command;
 
 namespace Project.Manager.Api.Services
 {
-    public class ProjectQuery
+    public class ProjectQuery : IProjectQuery
     {
-        private readonly DbContext _dbContext;
+        private readonly DataDbContext _dbContext;
 
-        public ProjectQuery(DbContext dbContext)
+        public ProjectQuery(DataDbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
-        public List<Project> GetProjects() => _dbContext.Projects.Include(p => p.Tasks).ToList();
-
+        public List<Models.Project> GetProjects() => _dbContext.Projects.Include(p => p.Tasks).ToList();
+        public Models.Project GetProjectById(int id) => _dbContext.Projects.FirstOrDefault(p => p.Id = id).Include(p => p.Tasks).ToList();
     }
 }

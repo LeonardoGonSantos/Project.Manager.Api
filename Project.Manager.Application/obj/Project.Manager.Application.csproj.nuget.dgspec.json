@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -148,7 +154,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Domain/Project.Manager.Domain.csproj": {
+                "projectPath": "/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Domain/Project.Manager.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -165,6 +175,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
