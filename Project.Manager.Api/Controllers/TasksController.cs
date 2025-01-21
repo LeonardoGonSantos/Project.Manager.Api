@@ -8,38 +8,27 @@ namespace Project.Manager.Api.Controllers
     [Route("api/[controller]")]
     public class TasksController : ControllerBase
     {
-        private readonly TaskService _taskService;
+        private readonly ITaskCommand _taskCommand;
+        private readonly ITaskQuery _taskQuery;
 
-        public TasksController(TaskService taskService)
+        public TasksController(ITaskCommand taskCommand, ITaskQuery taskQuery)
         {
-            _taskService = taskService;
-        }
-
-        [HttpGet("projects")]
-        public IActionResult GetProjects()
-        {
-            return Ok(_taskService.GetProjects());
+            _taskCommand = taskCommand;
+            _taskQuery = taskQuery;
         }
 
         [HttpGet("projects/{projectId}/tasks")]
         public IActionResult GetTasks(int projectId)
         {
-            var project = _taskService.GetProjectById(projectId);
-            if (project == null) return NotFound();
-            return Ok(project.Tasks);
-        }
-
-        [HttpPost("projects")]
-        public IActionResult CreateProject([FromBody] Project project)
-        {
-            _taskService.AddProject(project);
-            return CreatedAtAction(nameof(GetProjects), new { id = project.Id }, project);
+            var tasks = _taskQuery.GetTasksByProjectId(projectId);
+            if (tasks == null) return NotFound();
+            return Ok(tasks);
         }
 
         [HttpPost("projects/{projectId}/tasks")]
         public IActionResult CreateTask(int projectId, [FromBody] TaskItem task)
         {
-            _taskService.AddTask(projectId, task);
+            _taskCommand.AddTask(projectId, task);
             return CreatedAtAction(nameof(GetTasks), new { projectId = projectId, taskId = task.Id }, task);
         }
 
@@ -47,14 +36,14 @@ namespace Project.Manager.Api.Controllers
         public IActionResult UpdateTask(int projectId, int taskId, [FromBody] TaskItem task)
         {
             task.Id = taskId;
-            _taskService.UpdateTask(projectId, task);
+            _taskCommand.UpdateTask(projectId, task);
             return NoContent();
         }
 
         [HttpDelete("projects/{projectId}/tasks/{taskId}")]
         public IActionResult DeleteTask(int projectId, int taskId)
         {
-            _taskService.RemoveTask(projectId, taskId);
+            _taskCommand.RemoveTask(projectId, taskId);
             return NoContent();
         }
     }

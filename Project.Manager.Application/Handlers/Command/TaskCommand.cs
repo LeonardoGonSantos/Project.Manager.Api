@@ -1,16 +1,17 @@
-using Project.Manager.Api.Models;
+using System;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
-namespace Project.Manager.Api.Services
+namespace Project.Manager.Application.Handlers.Command
 {
-    public class TaskService
+    public class TaskCommandService
     {
-        private readonly List<Project> _projects = new List<Project>();
+        private readonly ProjectDbContext _context;
 
-        public List<Project> GetProjects() => _projects;
-
-        public Project GetProjectById(int id) => _projects.FirstOrDefault(p => p.Id == id);
-
-        public void AddProject(Project project) => _projects.Add(project);
+        public TaskCommandService(ProjectDbContext context)
+        {
+            _context = context;
+        }    
 
         public void AddTask(int projectId, TaskItem task)
         {
@@ -18,6 +19,7 @@ namespace Project.Manager.Api.Services
             if (project != null && project.Tasks.Count < 20)
             {
                 project.Tasks.Add(task);
+                _context.SaveChanges();
             }
         }
 
@@ -38,6 +40,7 @@ namespace Project.Manager.Api.Services
                     ChangedAt = DateTime.Now,
                     ChangedBy = "User"
                 });
+                _context.SaveChanges();
             }
         }
 
@@ -48,7 +51,12 @@ namespace Project.Manager.Api.Services
             if (task != null)
             {
                 project.Tasks.Remove(task);
+                _context.SaveChanges();
             }
         }
     }
+
+
+
+
 }

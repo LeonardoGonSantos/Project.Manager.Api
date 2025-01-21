@@ -12,9 +12,9 @@ services:
     networks:
       - taskmanagementnetwork
 
-  taskmanagementapi:
+  Project.Manager.Api:
     build: .
-    container_name: taskmanagementapi
+    container_name: Project.Manager.Api
     ports:
       - "8080:80"
     depends_on:
