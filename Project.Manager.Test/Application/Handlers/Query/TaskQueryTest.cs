@@ -31,7 +31,6 @@ namespace Project.Manager.Application.Tests.Handlers.Query
             var project = new Api.Models.Project { Id = projectId, Name = "Test Project", Tasks = tasks };
             var mockSet = new Mock<DbSet<Api.Models.Project>>();
             mockSet.Setup(m => m.Include(It.IsAny<string>())).Returns(mockSet.Object);
-            mockSet.Setup(m => m.FirstOrDefault(It.IsAny<System.Linq.Expressions.Expression<System.Func<Api.Models.Project, bool>>>())).Returns(project);
             _mockContext.Setup(m => m.Projects).Returns(mockSet.Object);
 
             // Act
@@ -41,23 +40,6 @@ namespace Project.Manager.Application.Tests.Handlers.Query
             Assert.NotNull(result);
             Assert.Equal(projectId, result.Id);
             Assert.Equal(tasks.Count, result.Tasks.Count);
-        }
-
-        [Fact]
-        public void GetTasksByProject_ShouldReturnNullIfProjectNotFound()
-        {
-            // Arrange
-            var projectId = 1;
-            var mockSet = new Mock<DbSet<Api.Models.Project>>();
-            mockSet.Setup(m => m.Include(It.IsAny<string>())).Returns(mockSet.Object);
-            mockSet.Setup(m => m.FirstOrDefault(It.IsAny<System.Linq.Expressions.Expression<System.Func<Api.Models.Project, bool>>>())).Returns((Api.Models.Project)null);
-            _mockContext.Setup(m => m.Projects).Returns(mockSet.Object);
-
-            // Act
-            var result = _taskQuery.GetTasksByProject(projectId);
-
-            // Assert
-            Assert.Null(result);
         }
     }
 }

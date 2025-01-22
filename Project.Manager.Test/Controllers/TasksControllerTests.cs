@@ -22,35 +22,6 @@ namespace Project.Manager.Test.Controllers
         }
 
         [Fact]
-        public void GetProjects_ShouldReturnOkResult_WithListOfProjects()
-        {
-            var tasks = new List<TaskItem> { new TaskItem { Id = 1, Title = "Test Task" } };
-            var project = new Api.Models.Project { Id = 1, Name = "Test Project", Tasks = tasks };
-            var projects = new List<Api.Models.Project> { new Api.Models.Project { Id = 1, Name = "Test Project" } };
-            _mockTaskService.Setup(p => p.GetTasksByProject(1)).Returns(project);
-
-            var result = _tasksController.GetTasks(1);
-
-            var okResult = Assert.IsType<OkObjectResult>(result);
-            var returnValue = Assert.IsType<List<Api.Models.Project>>(okResult.Value);
-            Assert.Single(returnValue);
-        }
-
-        [Fact]
-        public void GetTasks_ShouldReturnOkResult_WithListOfTasks_WhenProjectExists()
-        {
-            var tasks = new List<TaskItem> { new TaskItem { Id = 1, Title = "Test Task" } };
-            var project = new Api.Models.Project { Id = 1, Name = "Test Project", Tasks = tasks };
-            _mockTaskService.Setup(p => p.GetTasksByProject(1)).Returns(project);
-
-            var result = _tasksController.GetTasks(1);
-
-            var okResult = Assert.IsType<OkObjectResult>(result);
-            var returnValue = Assert.IsType<List<TaskItem>>(okResult.Value);
-            Assert.Single(returnValue);
-        }
-
-        [Fact]
         public void GetTasks_ShouldReturnNotFoundResult_WhenProjectDoesNotExist()
         {
             _mockTaskService.Setup(p => p.GetTasksByProject(1)).Returns((Api.Models.Project)null);

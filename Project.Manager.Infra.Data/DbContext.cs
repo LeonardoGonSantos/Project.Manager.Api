@@ -15,9 +15,9 @@ namespace Project.Manager.Api.Models
             optionsBuilder.UseSqlite(
                 @"Data Source=ProjectManager");
         }
-        public DbSet<Project> Projects { get; set; }
-        public DbSet<TaskItem> TaskItems { get; set; }
-        public DbSet<Comment> Comments { get; set; }
-        public DbSet<TaskHistory> TaskHistories { get; set; }
+        public virtual DbSet<Project> Projects { get; set; }
+        public virtual DbSet<TaskItem> TaskItems { get; set; }
+        public virtual DbSet<Comment> Comments { get; set; }
+        public virtual DbSet<TaskHistory> TaskHistories { get; set; }
     }
 }
