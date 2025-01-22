@@ -35,8 +35,8 @@ namespace Project.Manager.Api.Controllers
         [HttpPost("projects")]
         public IActionResult CreateProject([FromBody] Models.Project project)
         {
-            _projectCommand.AddProject(project);
-            return CreatedAtAction(nameof(GetProjectById), new { id = project.Id }, project);
+            var idProject = _projectCommand.AddProject(project);
+            return Ok(new {idProject});
         }
     }
 }

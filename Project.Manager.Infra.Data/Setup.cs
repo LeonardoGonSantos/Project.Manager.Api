@@ -11,7 +11,7 @@ namespace Project.Manager.Infra.Data
         public static IServiceCollection SetupData(this IServiceCollection services, string connectionString)
         {
             services.AddDbContext<DataDbContext>(options =>
-                options.UseSqlServer(connectionString));
+                options.UseSqlite(connectionString));
 
             return services;
         }

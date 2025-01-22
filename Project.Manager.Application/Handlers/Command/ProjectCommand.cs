@@ -16,12 +16,13 @@ namespace Project.Manager.Application.Handlers.Command
             _logger = logger;
         }
 
-        public void AddProject(Api.Models.Project project)
+        public int AddProject(Api.Models.Project project)
         {
             _logger.LogInformation("Adding a new project with name: {ProjectName}", project.Name);
             _context.Projects.Add(project);
             _context.SaveChanges();
             _logger.LogInformation("Project added successfully with ID: {ProjectId}", project.Id);
+            return project.Id;
         }
 
         public Api.Models.Project GetProjectById(int projectId)
