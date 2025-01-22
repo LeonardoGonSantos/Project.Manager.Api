@@ -1,15 +1,19 @@
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Project.Manager.Infra.Data;
+using Project.Manager.Api.Models;
 
-public static class Setup
+namespace Project.Manager.Infra.Data
 {
-    [ExcludeFromCodeCoverage]
-    public static IServiceCollection SetupData(this IServiceCollection services, string connectionString)
+    public static class Setup
     {
-        services.AddDbContext<DbContext>(options =>
-            options.UseSqlServer(connectionString));
+        [ExcludeFromCodeCoverage]
+        public static IServiceCollection SetupData(this IServiceCollection services, string connectionString)
+        {
+            services.AddDbContext<DataDbContext>(options =>
+                options.UseSqlite(connectionString));
 
-        return services;
+            return services;
+        }
     }
 }

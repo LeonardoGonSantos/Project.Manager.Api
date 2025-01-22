@@ -6,11 +6,18 @@ namespace Project.Manager.Api.Models
     [ExcludeFromCodeCoverage]
     public class DataDbContext : DbContext
     {
-        public DataDbContext(DbContextOptions<DataDbContext> options) : base(options) { }
+        public DataDbContext() { }
 
-        public DbSet<Project> Projects { get; set; }
-        public DbSet<TaskItem> TaskItems { get; set; }
-        public DbSet<Comment> Comments { get; set; }
-        public DbSet<TaskHistory> TaskHistories { get; set; }
+
+        public DataDbContext(DbContextOptions<DataDbContext> options) : base(options) { }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlite(
+                @"Data Source=ProjectManager");
+        }
+        public virtual DbSet<Project> Projects { get; set; }
+        public virtual DbSet<TaskItem> TaskItems { get; set; }
+        public virtual DbSet<Comment> Comments { get; set; }
+        public virtual DbSet<TaskHistory> TaskHistories { get; set; }
     }
 }

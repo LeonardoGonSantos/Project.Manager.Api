@@ -1,3 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using Project.Manager.Api.Filter;
+using Project.Manager.Api.Models;
+using Project.Manager.Application;
+using Project.Manager.Infra.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,25 +11,28 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")  ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
 builder.Services
-               .SetupData(builder.Configuration.GetConnectionString("DefaultConnection"))
+               .SetupData(connectionString)
                .SetupApplication();
+
+builder.Services.AddControllers(option => {
+    option.Filters.Add(typeof(ExceptionFilter));
+});
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+
+using (var scope = app.Services.CreateScope())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    var db = scope.ServiceProvider.GetRequiredService<DataDbContext>();
+    db.Database.Migrate();
 }
 
-app.UseHttpsRedirection();
-
-builder.Services.AddSingleton<TaskService>();
-builder.Services.AddControllers();
-
-var app = builder.Build();
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.MapControllers();
 

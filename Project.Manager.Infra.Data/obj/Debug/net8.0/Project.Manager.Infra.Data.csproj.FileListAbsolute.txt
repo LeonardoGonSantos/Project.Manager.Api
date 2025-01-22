@@ -3,3 +3,16 @@
 /Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.AssemblyInfo.cs
 /Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.csproj.CoreCompileInputs.cache
 /Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.sourcelink.json
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/bin/Debug/net8.0/Project.Manager.Infra.Data.deps.json
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/bin/Debug/net8.0/Project.Manager.Infra.Data.dll
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/bin/Debug/net8.0/Project.Manager.Infra.Data.pdb
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/bin/Debug/net8.0/Project.Manager.Domain.dll
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/bin/Debug/net8.0/Project.Manager.Domain.pdb
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.csproj.AssemblyReference.cache
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/Project..2D947727.Up2Date
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.dll
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/refint/Project.Manager.Infra.Data.dll
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.pdb
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/ref/Project.Manager.Infra.Data.dll
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/bin/Debug/net8.0/Project.Manager.Infra.Data.runtimeconfig.json
+/Users/leonardogoncalves/Desktop/Testes/eclipsetest/Project.Manager.Infra.Data/obj/Debug/net8.0/Project.Manager.Infra.Data.genruntimeconfig.cache

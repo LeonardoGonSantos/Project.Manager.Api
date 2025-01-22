@@ -1,27 +1,18 @@
 version: '3.8'
 
 services:
-  sqlserver:
-    image: mcr.microsoft.com/mssql/server:2019-latest
-    container_name: sqlserver
-    environment:
-      SA_PASSWORD: "Your_password123"
-      ACCEPT_EULA: "Y"
-    ports:
-      - "1433:1433"
-    networks:
-      - Project.Manager.Api.network
 
-  Project.Manager.Api:
+  projectmanagerapi:
     build: .
-    container_name: Project.Manager.Api
+    container_name: projectmanagerapi
     ports:
-      - "5862:80"
-    depends_on:
-      - sqlserver
+      - "5862:8080"
     networks:
-      - Project.Manager.Api.network
+      - projectmanagerapinetwork
 
 networks:
-  Project.Manager.Api.network:
+  projectmanagerapinetwork:
+    driver: bridge
+
+  default:
     driver: bridge
