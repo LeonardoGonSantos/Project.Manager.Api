@@ -39,8 +39,7 @@ namespace Project.Manager.Test.Controllers
             var result = _tasksController.CreateTask(1 ,task);
 
             var createdAtActionResult = Assert.IsType<CreatedAtActionResult>(result);
-            var returnValue = Assert.IsType<Api.Models.Project>(createdAtActionResult.Value);
-            Assert.Equal(new Api.Models.Project(), returnValue);
+            var returnValue = Assert.IsType<Api.Models.TaskItem>(createdAtActionResult.Value);
         }
 
         [Fact]
