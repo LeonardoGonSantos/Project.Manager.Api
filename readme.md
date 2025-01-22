@@ -52,6 +52,7 @@ Após iniciar os serviços com Docker Compose, abra o navegador e acesse a pági
 6. **Dívida Técnica**:
   - Separar a camada de aplicação da camada de repositório quando o projeto crescer.
   - Utilizar Dapper para acesso ao banco de dados caso o projeto seja muito requisitado.
+  - Não utilizei SQL Server por fins de simplicidade.
 
 ## Visão do Projeto sobre Arquitetura/Cloud
 
@@ -125,3 +126,4 @@ dotnet ef migrations add InitialCreateDb --project Project.Manager.Infra.Data --
 ```
 
 Essas melhorias ajudarão a tornar o projeto mais robusto, escalável e fácil de manter.
+
