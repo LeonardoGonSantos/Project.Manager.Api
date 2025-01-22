@@ -1,3 +1,4 @@
+using Project.Manager.Api.Filter;
 using Project.Manager.Application;
 using Project.Manager.Infra.Data;
 
@@ -15,7 +16,9 @@ builder.Services
                .SetupData(connectionString)
                .SetupApplication();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(option => {
+    option.Filters.Add(typeof(ExceptionFilter));
+});
 
 var app = builder.Build();
 
