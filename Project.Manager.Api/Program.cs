@@ -1,3 +1,5 @@
+using Project.Manager.Application;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -20,11 +22,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-builder.Services.AddSingleton<TaskService>();
 builder.Services.AddControllers();
-
-var app = builder.Build();
-
 app.MapControllers();
 
 app.Run();

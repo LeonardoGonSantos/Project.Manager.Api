@@ -1,35 +1,38 @@
 using Moq;
 using System.Collections.Generic;
-using TaskManagementAPI.Controllers;
-using TaskManagementAPI.Interfaces;
-using TaskManagementAPI.Models;
+using Microsoft.AspNetCore.Mvc;
+using Project.Manager.Api.Controllers;
+using Project.Manager.Api.Models;
+using Project.Manager.Application.Handlers.Command;
 using Xunit;
 
 namespace Project.Manager.Test.Controllers
 {
     public class TasksControllerTests
     {
-        private readonly Mock<IProjectService> _mockProjectService;
-        private readonly Mock<ITaskService> _mockTaskService;
+        private readonly Mock<ITaskCommand> _mockTaskCommand;
+        private readonly Mock<ITaskQuery> _mockTaskService;
         private readonly TasksController _tasksController;
 
         public TasksControllerTests()
         {
-            _mockProjectService = new Mock<IProjectService>();
-            _mockTaskService = new Mock<ITaskService>();
-            _tasksController = new TasksController(_mockProjectService.Object, _mockTaskService.Object);
+            _mockTaskCommand = new Mock<ITaskCommand>();
+            _mockTaskService = new Mock<ITaskQuery>();
+            _tasksController = new TasksController(_mockTaskCommand.Object, _mockTaskService.Object);
         }
 
         [Fact]
         public void GetProjects_ShouldReturnOkResult_WithListOfProjects()
         {
-            var projects = new List<Project> { new Project { Id = 1, Name = "Test Project" } };
-            _mockProjectService.Setup(p => p.GetProjects()).Returns(projects);
+            var tasks = new List<TaskItem> { new TaskItem { Id = 1, Title = "Test Task" } };
+            var project = new Api.Models.Project { Id = 1, Name = "Test Project", Tasks = tasks };
+            var projects = new List<Api.Models.Project> { new Api.Models.Project { Id = 1, Name = "Test Project" } };
+            _mockTaskService.Setup(p => p.GetTasksByProject(1)).Returns(project);
 
-            var result = _tasksController.GetProjects();
+            var result = _tasksController.GetTasks(1);
 
             var okResult = Assert.IsType<OkObjectResult>(result);
-            var returnValue = Assert.IsType<List<Project>>(okResult.Value);
+            var returnValue = Assert.IsType<List<Api.Models.Project>>(okResult.Value);
             Assert.Single(returnValue);
         }
 
@@ -37,8 +40,8 @@ namespace Project.Manager.Test.Controllers
         public void GetTasks_ShouldReturnOkResult_WithListOfTasks_WhenProjectExists()
         {
             var tasks = new List<TaskItem> { new TaskItem { Id = 1, Title = "Test Task" } };
-            var project = new Project { Id = 1, Name = "Test Project", Tasks = tasks };
-            _mockProjectService.Setup(p => p.GetProjectById(1)).Returns(project);
+            var project = new Api.Models.Project { Id = 1, Name = "Test Project", Tasks = tasks };
+            _mockTaskService.Setup(p => p.GetTasksByProject(1)).Returns(project);
 
             var result = _tasksController.GetTasks(1);
 
@@ -50,7 +53,7 @@ namespace Project.Manager.Test.Controllers
         [Fact]
         public void GetTasks_ShouldReturnNotFoundResult_WhenProjectDoesNotExist()
         {
-            _mockProjectService.Setup(p => p.GetProjectById(1)).Returns((Project)null);
+            _mockTaskService.Setup(p => p.GetTasksByProject(1)).Returns((Api.Models.Project)null);
 
             var result = _tasksController.GetTasks(1);
 
@@ -60,13 +63,13 @@ namespace Project.Manager.Test.Controllers
         [Fact]
         public void CreateProject_ShouldReturnCreatedAtActionResult_WithCreatedProject()
         {
-            var project = new Project { Id = 1, Name = "Test Project" };
+            var task = new Api.Models.TaskItem() { Id = 1, Title = "Test Project" };
 
-            var result = _tasksController.CreateProject(project);
+            var result = _tasksController.CreateTask(1 ,task);
 
             var createdAtActionResult = Assert.IsType<CreatedAtActionResult>(result);
-            var returnValue = Assert.IsType<Project>(createdAtActionResult.Value);
-            Assert.Equal(project, returnValue);
+            var returnValue = Assert.IsType<Api.Models.Project>(createdAtActionResult.Value);
+            Assert.Equal(new Api.Models.Project(), returnValue);
         }
 
         [Fact]

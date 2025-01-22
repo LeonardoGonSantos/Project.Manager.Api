@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Project.Manager.Api.Models;
 using Project.Manager.Api.Services;
+using Project.Manager.Application.Handlers.Command;
 
 namespace Project.Manager.Api.Controllers
 {
@@ -20,7 +21,7 @@ namespace Project.Manager.Api.Controllers
         [HttpGet("projects/{projectId}/tasks")]
         public IActionResult GetTasks(int projectId)
         {
-            var tasks = _taskQuery.GetTasksByProjectId(projectId);
+            var tasks = _taskQuery.GetTasksByProject(projectId);
             if (tasks == null) return NotFound();
             return Ok(tasks);
         }

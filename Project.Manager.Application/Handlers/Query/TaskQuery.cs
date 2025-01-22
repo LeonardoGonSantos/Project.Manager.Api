@@ -1,7 +1,7 @@
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using Project.Manager.Api.Models;
 using Project.Manager.Application.Handlers.Command;
-using Project.Manager.Domain.Models;
 
 namespace Project.Manager.Application.Handlers.Query
 {
