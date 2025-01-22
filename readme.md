@@ -28,7 +28,7 @@ Esses comandos irão facilitar a execução e gerenciamento dos serviços da apl
 
 ## Testando a API com Swagger
 
-Após iniciar os serviços com Docker Compose, abra o navegador e acesse a página [http://localhost:5741](http://localhost:5741). A documentação do Swagger será exibida, permitindo que você teste os endpoints da API de forma interativa.
+Após iniciar os serviços com Docker Compose, abra o navegador e acesse a página [http://localhost:5741/swagger](http://localhost:5741/swagger). A documentação do Swagger será exibida, permitindo que você teste os endpoints da API de forma interativa.
 
 # Melhorias no Projeto
 
