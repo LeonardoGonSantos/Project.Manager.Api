@@ -1,26 +1,17 @@
-# Use the official .NET SDK image to build the app
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /app
+FROM mcr.microsoft.com/dotnet/sdk:8.0@sha256:35792ea4ad1db051981f62b313f1be3b46b1f45cadbaa3c288cd0d3056eefb83 AS build
+WORKDIR /App
 
-# Copy the project files and restore as distinct layers
-COPY ["Project.Manager.Api/Project.Manager.Api.csproj", "./"]
-COPY ["Project.Manager.Application/Project.Manager.Application.csproj", "./"]
-COPY ["Project.Manager.Domain/Project.Manager.Domain.csproj", "./"]
-COPY ["Project.Manager.Infra.Data/Project.Manager.Infra.Data.csproj", "./"]
-COPY ["Project.Manager.Test/Project.Manager.Test.csproj", "./"]
-RUN dotnet restore
-
-# Copy everything else and build the app
+# Copy everything
 COPY . ./
-RUN dotnet publish Project.Manager.Api.csproj -c Release -o out
+# Restore as distinct layers
+RUN dotnet restore
+# Build and publish a release
+RUN dotnet publish -o out
 
-# Use the official ASP.NET Core runtime image for the app
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
-WORKDIR /app
-COPY --from=build /app/out .
+EXPOSE 8080
 
-# Expose port 80
-EXPOSE 80
-
-# Run the app
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:8.0@sha256:6c4df091e4e531bb93bdbfe7e7f0998e7ced344f54426b7e874116a3dc3233ff
+WORKDIR /App
+COPY --from=build /App/out .
 ENTRYPOINT ["dotnet", "Project.Manager.Api.dll"]

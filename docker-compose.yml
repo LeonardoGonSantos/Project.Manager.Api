@@ -16,7 +16,7 @@ services:
     build: .
     container_name: projectmanagerapi
     ports:
-      - "5862:80"
+      - "5862:8080"
     depends_on:
       - sqlserver
     networks:
@@ -24,4 +24,7 @@ services:
 
 networks:
   projectmanagerapinetwork:
+    driver: bridge
+
+  default:
     driver: bridge
