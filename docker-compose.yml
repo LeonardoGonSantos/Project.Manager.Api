@@ -10,18 +10,18 @@ services:
     ports:
       - "1433:1433"
     networks:
-      - Project.Manager.Api.network
+      - projectmanagerapinetwork
 
-  Project.Manager.Api:
+  projectmanagerapi:
     build: .
-    container_name: Project.Manager.Api
+    container_name: projectmanagerapi
     ports:
       - "5862:80"
     depends_on:
       - sqlserver
     networks:
-      - Project.Manager.Api.network
+      - projectmanagerapinetwork
 
 networks:
-  Project.Manager.Api.network:
+  projectmanagerapinetwork:
     driver: bridge
