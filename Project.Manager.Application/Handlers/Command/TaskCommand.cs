@@ -31,6 +31,7 @@ namespace Project.Manager.Application.Handlers.Command
             else
             {
                 _logger.LogWarning($"Failed to add task to project {projectId}");
+                throw new Exception("Project not found or task limit reached");
             }
         }
 
